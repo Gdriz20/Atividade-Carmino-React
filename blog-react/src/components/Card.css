@@ -1,0 +1,27 @@
+
+.post-card-grande {
+  display: grid;
+  grid-template-rows: 5fr 1fr 1fr;
+  background: #fff;
+  border: 0.1rem solid #ddd;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  padding: 1rem;
+  transition: box-shadow 0.3s;
+  align-items: center;
+}
+
+.thumbnail {
+  width: 30px;
+  height: 0px;
+  background: #ddd;
+  border-radius: 8px;
+}
+
+.maior {
+  width: 100%;
+  max-width: 38rem;
+  height: 20rem;
+}
+
