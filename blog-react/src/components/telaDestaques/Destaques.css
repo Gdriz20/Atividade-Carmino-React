@@ -1,0 +1,48 @@
+/* CONFIGURAÇÕES GERAIS */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #faf9f9;
+  color: #222;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;              
+  padding: 1rem 2rem;
+  background: #fff;
+  padding: 3rem 2rem;
+  flex-wrap: wrap;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+main {
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+input {
+  padding: 0.7rem 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.posts-grande{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.3rem;
+}
+
+.TituloGrande{
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  margin-top: 1rem;
+}

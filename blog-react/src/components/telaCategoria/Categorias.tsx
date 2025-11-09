@@ -1,10 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './Categorias.css'
-import Footer from './footer.tsx'
-import Header from './header.tsx'
-import Card from './card.tsx'
-import Filtro from './Filtro.tsx'
+import '../telaCategoria/Categorias.css'
+import Footer from '../footer.tsx'
+import Header from '../header.tsx'
+import Card from '../Card.tsx'
+import Filtro from '../Filtro.tsx'
 
 
 createRoot(document.getElementById('root')!).render(
