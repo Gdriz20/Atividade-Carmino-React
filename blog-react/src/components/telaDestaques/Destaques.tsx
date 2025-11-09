@@ -1,15 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import '../telaDestaques/Destaques.css'
-import Footer from '../footer.tsx'
-import Header from '../header.tsx'
 import Card from '../Card.tsx'
 
 
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Header />
     <main>
       
       <h1 className='TituloGrande'>Destaques</h1>
@@ -24,7 +21,6 @@ createRoot(document.getElementById('root')!).render(
         <Card titulo="Post Title 8" subtitulo="Short description of the post."  semSubtitulo={true}/>
         <Card titulo="Post Title 9" subtitulo="Short description of the post."  semSubtitulo={true}/>
       </div>
-      <Footer />
     </main>
   </StrictMode>,
 )
