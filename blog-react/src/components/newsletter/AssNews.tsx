@@ -1,11 +1,9 @@
-import Footer from '../footer'
-import Header from '../header'
+
 import './AssNews.css'
 
 function AssNews() {
     return (
         <>
-        <Header />
             <main className="newsContainer">
 
                 <section className="cardNewsletter">
@@ -30,7 +28,6 @@ function AssNews() {
                 </section>
 
             </main>
-        <Footer />
         </>
     )
 }

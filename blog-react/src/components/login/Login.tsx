@@ -1,12 +1,10 @@
-import Footer from '../footer'
-import Header from '../header'
+
 import './Login.css'
 
 function Login() {
 
     return (
         <>
-            <Header />
             
             <main className="loginContainer">
 
@@ -31,8 +29,6 @@ function Login() {
                     </form>
                 </section>
             </main>
-
-            <Footer />
         </>
     )
 

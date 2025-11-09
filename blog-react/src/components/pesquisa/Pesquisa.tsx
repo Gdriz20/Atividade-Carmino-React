@@ -1,5 +1,3 @@
-import Footer from '../footer'
-import Header from '../header'
 import CardPesquisa from './cardPesquisa'
 import './Pesquisa.css'
 
@@ -12,7 +10,6 @@ function Pesquisa() {
 
     return (
         <>
-            <Header />
             <section className="resultados">
                 <h2>Resultados para: {resultados.length}</h2>
 
@@ -21,7 +18,6 @@ function Pesquisa() {
                 ))}
             </section>
 
-            <Footer />
         </>
     )
 }

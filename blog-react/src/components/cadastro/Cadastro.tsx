@@ -1,12 +1,9 @@
-import Footer from '../footer'
-import Header from '../header'
 import './Cadastro.css'
 
 function Cadastro() {
 
     return (
         <>
-            <Header />
             <main className="cadastroContainer">
 
                 <section className="cardCadastro">
@@ -32,7 +29,6 @@ function Cadastro() {
                     </form>
                 </section>
             </main>
-            <Footer />
         </>
 
     )
