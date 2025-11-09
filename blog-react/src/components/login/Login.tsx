@@ -1,9 +1,13 @@
+import Footer from '../footer'
+import Header from '../header'
 import './Login.css'
 
 function Login() {
 
     return (
         <>
+            <Header />
+            
             <main className="loginContainer">
 
                 <section className="cardLogin">
@@ -26,8 +30,9 @@ function Login() {
                         </div>
                     </form>
                 </section>
-
             </main>
+
+            <Footer />
         </>
     )
 
