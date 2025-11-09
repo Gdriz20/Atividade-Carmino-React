@@ -1,0 +1,244 @@
+/* ===== RESET BÁSICO ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #f9fafb;
+  color: #222;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+nav h1 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+nav li {
+  cursor: pointer;
+  color: #555;
+  transition: 0.3s;
+}
+
+nav li:hover {
+  text-decoration: underline;
+}
+
+nav .actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+nav input {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.4rem 0.8rem;
+  outline: none;
+}
+
+nav button {
+  border: 1px solid #047857;
+  color: #047857;
+  background: transparent;
+  border-radius: 8px;
+  padding: 0.4rem 0.9rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+nav button:hover {
+  background: #047857;
+  color: white;
+}
+
+/* ===== LAYOUT PRINCIPAL ===== */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+  }
+}
+
+/* ===== SIDEBAR PERFIL ===== */
+aside {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+aside h2 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+aside .avatar {
+  width: 100%;
+  height: 130px;
+  background: #f3f4f6;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9ca3af;
+}
+
+aside input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+}
+
+aside button {
+  width: 100%;
+  background: #047857;
+  color: #fff;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+aside button:hover {
+  background: #065f46;
+}
+
+/* ===== SEÇÃO DE POSTAGENS ===== */
+section {
+  flex: 1;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  padding: 1rem 1.5rem;
+}
+
+section h2 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.post-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.2s;
+}
+
+.post-card:hover {
+  background: #f9fafb;
+}
+
+.post-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.post-thumb {
+  width: 80px;
+  height: 60px;
+  background: #f3f4f6;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+}
+
+.post-meta p {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.post-meta h3 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  padding: 1rem;
+  background: #fff;
+  border-top: 1px solid #e5e7eb;
+  margin-top: 1rem;
+}
+
+footer button {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+footer button:hover {
+  background: #f3f4f6;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  aside {
+    max-width: 100%;
+  }
+
+  .post-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  nav .actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
