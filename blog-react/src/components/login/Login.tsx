@@ -1,0 +1,42 @@
+import Footer from '../footer'
+import Header from '../header'
+import './Login.css'
+
+function Login() {
+
+    return (
+        <>
+            <Header />
+            
+            <main className="loginContainer">
+
+                <section className="cardLogin">
+                    <h2>Entrar</h2>
+
+                    <form className="formLogin">
+                        <div className="inputLogin">
+                            <input type="email" required placeholder="E-mail" />
+                            <input type="password" required placeholder="Senha" />
+                        </div>
+
+                        <div className="submitLogin">
+                            <button type="submit" className="btnEntrar">Entrar</button>
+                            <button type="button" className="outline">Entrar com Google</button>
+                        </div>
+
+                        <div className="ajudaLogin">
+                            <a href="#">Esqueci a senha</a> 
+                            <a href="#">Criar conta</a>
+                        </div>
+                    </form>
+                </section>
+            </main>
+
+            <Footer />
+        </>
+    )
+
+}
+
+export default Login
+
