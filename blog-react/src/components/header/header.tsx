@@ -15,7 +15,7 @@ function Header() {
               <li><Link to="/">Início</Link></li>
               <li><Link to="/">Páginas</Link></li>
               <li><Link to="/">Destaques</Link></li>
-              <li><Link to="/">Assinar</Link></li>
+              <li><Link to="/newsletter">Assinar</Link></li>
               <li><Link to="/">Admin</Link></li>
             </ul>
           </nav>
