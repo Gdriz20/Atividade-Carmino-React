@@ -46,3 +46,21 @@ input {
   margin-bottom: 0.7rem;
   margin-top: 1rem;
 }
+
+@media (max-width: 992px) {
+  
+  .posts-grande{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: 1.3rem;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .posts-grande{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.3rem;
+  }
+}

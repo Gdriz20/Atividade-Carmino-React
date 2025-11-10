@@ -1,6 +1,6 @@
 /* CONFIGURAÇÕES GERAIS */
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,13 +16,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1.5rem;              
+  gap: 1.5rem;
   padding: 1rem 2rem;
   background: #fff;
   padding: 3rem 2rem;
   flex-wrap: wrap;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
+
 main {
   margin: 2rem auto;
   padding: 0 1rem;
@@ -34,8 +35,26 @@ input {
   border-radius: 8px;
 }
 
-.posts-grande{
+.posts-grande {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1.3rem;
 }
+@media (max-width: 992px) {
+  
+  .posts-grande{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: 1.3rem;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .posts-grande{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.3rem;
+  }
+}
+
