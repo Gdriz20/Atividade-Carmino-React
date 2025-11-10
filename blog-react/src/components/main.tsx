@@ -6,6 +6,9 @@ import Login from './login/Login.tsx'
 import Cadastro from './cadastro/Cadastro.tsx'
 import AssNews from './newsletter/AssNews.tsx'
 import Pesquisa from './pesquisa/Pesquisa.tsx'
+import Destaque from './CategoriasEDestaques/telaDestaques/Destaques.tsx'
+import Categoria from './CategoriasEDestaques/telaCategoria/Categorias.tsx'
+import PesquisaCategoria from './telaPesquisarCategoria/pesquisaCategoria.tsx'
 
 const router = createBrowserRouter([
   {
@@ -17,7 +20,10 @@ const router = createBrowserRouter([
       {path: "/", element: <Login />}, 
       {path: "/cadastro", element: <Cadastro />},
       {path: "/newsletter", element: <AssNews />},
-      {path: "/pesquisa", element: <Pesquisa />}
+      {path: "/pesquisa", element: <Pesquisa />},
+      {path: "/destaques", element: <Destaque />},
+      {path: "/categorias", element: <Categoria />},
+      {path: "/pesquisarCategoria", element: <PesquisaCategoria />},
     ]
   }
 ])
