@@ -9,6 +9,9 @@ import Pesquisa from './pesquisa/Pesquisa.tsx'
 import Destaque from './CategoriasEDestaques/telaDestaques/Destaques.tsx'
 import Categoria from './CategoriasEDestaques/telaCategoria/Categorias.tsx'
 import PesquisaCategoria from './telaPesquisarCategoria/pesquisaCategoria.tsx'
+import EditorPicks from './editor/Editor.tsx'
+import NewPost from './post/Post.tsx'
+import Dashboard from './usuario/Usuario.tsx'
 
 const router = createBrowserRouter([
   {
@@ -24,6 +27,10 @@ const router = createBrowserRouter([
       {path: "/destaques", element: <Destaque />},
       {path: "/categorias", element: <Categoria />},
       {path: "/pesquisarCategoria", element: <PesquisaCategoria />},
+      {path: "/editor", element: <EditorPicks />},
+      {path: "/post", element: <NewPost/>},
+      {path: "/", element: <Dashboard />}
+
     ]
   }
 ])

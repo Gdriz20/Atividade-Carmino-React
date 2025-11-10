@@ -1,6 +1,7 @@
 import React from 'react';
-import './Layout.css'; 
-import './EditorPicks.css'; 
+import './Editor.css'; 
+
+
 
 const EditorPicks: React.FC = () => {
   const posts = [
@@ -10,6 +11,7 @@ const EditorPicks: React.FC = () => {
     { id: '#5', title: 'Título do Post 5', category: 'Categoria', author: 'Autor' },
   ];
 
+  
   return (
     <>
       <section className="content-box">

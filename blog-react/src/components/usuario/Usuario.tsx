@@ -1,8 +1,9 @@
 import React from 'react';
-import './Layout.css'; 
-import './Dashboard.css'; 
+import './Usuario.css'; 
+
 
 //Alteracao
+
 const AppHeader: React.FC = () => (
   <header className="app-header">
     <div className="logo">HABIT</div>

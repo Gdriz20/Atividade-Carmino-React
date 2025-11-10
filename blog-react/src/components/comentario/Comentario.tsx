@@ -1,6 +1,5 @@
 import React from 'react';
-import './Layout.css'; 
-import './CommentsQueue.css'; 
+import './Comentario.css'; 
 
 const CommentsQueue: React.FC = () => {
   const comments = [
