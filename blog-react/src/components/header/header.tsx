@@ -24,8 +24,8 @@ function Header() {
         <section className="navRight">
           <div className="search-area">
             <input type="search" />
-            <button id="btnSearch">Buscar</button>
-            <button id="btnLogin" className="outline">Entrar</button>
+            <Link to="/pesquisa"><button id="btnSearch">Buscar</button></Link>
+            <Link to="/"><button id="btnLogin" className="outline">Entrar</button></Link>
           </div>
         </section>
 

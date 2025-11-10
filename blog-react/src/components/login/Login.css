@@ -34,6 +34,10 @@
   font-size: 0.95rem;
 }
 
+.formLogin button {
+  margin: 5px;
+}
+
 /* Links menores */
 .ajudaLogin {
   padding: 1rem 0px;

@@ -1,6 +1,5 @@
 import React from 'react';
-import './Layout.css'; 
-import './NewPost.css'; 
+import './Post.css'; 
 
 const NewPost: React.FC = () => {
   return (
