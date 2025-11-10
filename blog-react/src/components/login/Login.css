@@ -2,9 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:#f8f9fa;
   min-height: 70vh;
-  border: 1px solid #ddd;
 }
 
 .cardLogin{

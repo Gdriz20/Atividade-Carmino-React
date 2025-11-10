@@ -1,51 +1,5 @@
 import React from 'react';
-import './Usuario.css'; 
-
-
-//Alteracao
-
-const AppHeader: React.FC = () => (
-  <header className="app-header">
-    <div className="logo">HABIT</div>
-    <nav className="main-nav">
-      <a href="#">Início</a>
-      <a href="#">Páginas</a>
-      <a href="#">Destaques</a>
-      <a href="#">Assinar</a>
-      <a href="#">Admin</a>
-    </nav>
-    <div className="search-area">
-      <input type="text" placeholder="Buscar..." />
-      <button className="btn btn-search">Buscar</button>
-      <button className="btn btn-primary">Entrar</button>
-    </div>
-  </header>
-);
-
-const AppSidebar: React.FC = () => (
-  <aside className="app-sidebar">
-    <h3>Menu</h3>
-    <ul>
-      <li>Categorias</li>
-      <li>Criar Post</li>
-      <li>Escolhas do Editor</li>
-      <li className="active">Usuários</li>
-      <li>Fila de revisão</li>
-      <li>Fila de comentários</li>
-    </ul>
-  </aside>
-);
-
-const AppFooter: React.FC = () => (
-  <footer className="app-footer">
-    <span>Instagram</span>
-    <span>Work</span>
-    <span>Bags</span>
-    <span>Lamp</span>
-    <span>Books</span>
-  </footer>
-);
-
+import './Usuario.css';
 
 const Dashboard: React.FC = () => {
   const users = [
@@ -57,9 +11,7 @@ const Dashboard: React.FC = () => {
 
   return (
     <div className="app-container">
-      <AppHeader />
       <div className="app-body">
-        <AppSidebar />
         <main className="main-content">
           <section className="stats-cards">
             <div className="stat-card dark">
@@ -113,7 +65,6 @@ const Dashboard: React.FC = () => {
           </section>
         </main>
       </div>
-      <AppFooter />
     </div>
   );
 };

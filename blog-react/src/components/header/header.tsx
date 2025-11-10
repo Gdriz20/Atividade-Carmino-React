@@ -13,10 +13,10 @@ function Header() {
           <nav className="navbar">
             <ul className="menu">
               <li><Link to="/">Início</Link></li>
-              <li><Link to="/">Páginas</Link></li>
-              <li><Link to="/">Destaques</Link></li>
+              <li><Link to="/categorias">Páginas</Link></li>
+              <li><Link to="/destaques">Destaques</Link></li>
               <li><Link to="/newsletter">Assinar</Link></li>
-              <li><Link to="/">Admin</Link></li>
+              <li><Link to="/editor">Admin</Link></li>
             </ul>
           </nav>
         </section>

@@ -12,6 +12,8 @@ import PesquisaCategoria from './telaPesquisarCategoria/pesquisaCategoria.tsx'
 import EditorPicks from './editor/Editor.tsx'
 import NewPost from './post/Post.tsx'
 import Dashboard from './usuario/Usuario.tsx'
+import Header from './header/header.tsx'
+import Footer from './footer/footer.tsx'
 
 const router = createBrowserRouter([
   {
@@ -38,5 +40,5 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <RouterProvider router={router} />
-  </StrictMode>,
+  </StrictMode>
 )
